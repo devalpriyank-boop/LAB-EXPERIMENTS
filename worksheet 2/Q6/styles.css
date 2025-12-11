@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.table-container {
+    overflow-x: auto;              /* Horizontal scroll on small screens */
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: white;
+}
+
+.responsive-table {
+    width: 100%;
+    min-width: 800px;              /* Minimum width for scrolling */
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+caption {
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+th {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    padding: 15px 12px;
+    text-align: center;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
+/* Priority columns for mobile - show first 3 columns */
+@media (max-width: 768px) {
+    .responsive-table thead th:nth-child(n+4),
+    .responsive-table tbody td:nth-child(n+4) {
+        display: none;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .responsive-table {
+        font-size: 0.85em;
+    }
+    th, td {
+        padding: 8px 6px;
+    }
+}
