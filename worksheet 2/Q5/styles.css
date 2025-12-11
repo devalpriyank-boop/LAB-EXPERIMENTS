@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.explanation {
+    background: #fff3cd;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #ffc107;
+    border-radius: 5px;
+}
+
+table {
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+caption {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.legacy-table {
+    /* Mimics old attributes with CSS */
+    border: 2px solid #333;
+}
+
+.legacy-table th,
+.legacy-table td {
+    border: 1px solid #333;
+}
+
+.legacy-table caption {
+    background-color: #ff9800;
+    color: white;
+}
+
+.modern-table {
+    /* Modern equivalents */
+    width: 50%;                    /* width="50%" */
+    border-collapse: separate;     /* cellspacing effect */
+    border-spacing: 5px 10px;      /* cellspacing="5" */
+    border: 2px solid #2196F3;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 12px 15px;            /* cellpadding="10" */
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.modern-table th {
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+    color: white;
+}
+
+.modern-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.modern-table tr:hover {
+    background-color: #e3f2fd;
+}
+
+.modern-table caption {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+}
