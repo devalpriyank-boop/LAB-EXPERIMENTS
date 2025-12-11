@@ -1,0 +1,19 @@
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+.vertical-nav li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.vertical-nav li a:hover {
+    background-color: #ddd;
+}
