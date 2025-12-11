@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rowspan and Colspan Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Rowspan & Colspan Examples</h1>
+
+
+<table class="merged-table">
+    <caption>Student Performance Report</caption>
+    <tr>
+        <th rowspan="3">Student Info</th>
+        <th colspan="2">Subjects</th>
+        <th rowspan="3">Total</th>
+    </tr>
+    <tr>
+        <th>Math</th>
+        <th>Science</th>
+    </tr>
+    <tr>
+        <td>Alice</td>
+        <td>90</td>
+        <td>85</td>
+        <td>175</td>
+    </tr>
+    <tr>
+        <td>Bob</td>
+        <td colspan="2">Missed Exam</td>
+        <td>-</td>
+    </tr>
+</table>
+
+<br><br>
+
+<h2>Additional Examples</h2>
+<table class="simple-merge">
+    <tr>
+        <th rowspan="2">Product</th>
+        <th>Price</th>
+        <th>Stock</th>
+    </tr>
+    <tr>
+        <td>Laptop</td>
+        <td>$999</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td colspan="2">$599 (10 units available)</td>
+    </tr>
+</table>
+
+</body>
+</html>

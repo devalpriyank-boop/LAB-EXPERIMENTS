@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.explanation {
+    background: #e3f2fd;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 4px solid #2196F3;
+    font-size: 1.1em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+caption {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: center;
+    border: 2px solid #ddd;
+    font-weight: bold;
+}
+
+th {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+}
+
+td {
+    background: #f8f9fa;
+}
+
+tr:nth-child(even) td {
+    background: #e9ecef;
+}
+
+tr:hover td {
+    background: #d4edda;
+}
+
+.merged-table th[rowspan],
+.merged-table th[colspan],
+.simple-merge th[rowspan] {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E8E) !important;
+}
+
+.simple-merge {
+    font-size: 0.95em;
+}
