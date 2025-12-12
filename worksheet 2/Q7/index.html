@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Tables Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Nested Tables Example</h1>
+
+
+<table class="outer-table">
+    <caption>Order Summary with Items</caption>
+    <tr>
+        <th>Order ID</th>
+        <th>Customer</th>
+        <th>Items Details</th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>ORD-001</td>
+        <td>John Doe</td>
+        <td>
+            <table class="inner-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Laptop</td>
+                    <td>1</td>
+                    <td>$999</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>2</td>
+                    <td>$25</td>
+                </tr>
+            </table>
+        </td>
+        <td>$1,049</td>
+    </tr>
+    <tr>
+        <td>ORD-002</td>
+        <td>Jane Smith</td>
+        <td>
+            <table class="inner-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Case</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </td>
+        <td>$799</td>
+    </tr>
+</table>
+
+</body>
+</html>
